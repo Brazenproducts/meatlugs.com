@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>How to Size a Meat Lug Fleet: Throughput, Buffer, and Replacement Math | Meatlugs</title>
+  <meta name="description" content="A practical framework for sizing your reusable meat lug fleet — covering throughput, wash-cycle buffer, dunnage float, and annual replacement planning.">
+  <link rel="canonical" href="https://meatlugs.com/blog/meat-lug-fleet-sizing-inventory-planning.html">
+  <meta property="og:title" content="How to Size a Meat Lug Fleet: Throughput, Buffer, and Replacement Math">
+  <meta property="og:description" content="A practical framework for sizing your reusable meat lug fleet — covering throughput, wash-cycle buffer, dunnage float, and annual replacement planning.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://meatlugs.com/blog/meat-lug-fleet-sizing-inventory-planning.html">
+  <meta property="og:image" content="https://brazenproducts.github.io/elipacko-assets/orange-box.jpg">
+  <meta property="og:image:width" content="900">
+  <meta property="og:image:height" content="600">
+  <meta property="og:site_name" content="Meatlugs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Size a Meat Lug Fleet: Throughput, Buffer, and Replacement Math">
+  <meta name="twitter:description" content="A practical framework for sizing your reusable meat lug fleet — covering throughput, wash-cycle buffer, dunnage float, and annual replacement planning.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Size a Meat Lug Fleet: Throughput, Buffer, and Replacement Math","description":"A practical framework for sizing your reusable meat lug fleet — covering throughput, wash-cycle buffer, dunnage float, and annual replacement planning.","url":"https://meatlugs.com/blog/meat-lug-fleet-sizing-inventory-planning.html","datePublished":"2026-10-28","dateModified":"2026-10-28","publisher":{"@type":"Organization","name":"Elipacko USA","url":"https://elipacko.com"}}</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:#fff;color:#1a1a1a;line-height:1.75}
+    header{border-bottom:1px solid #e5e5e5;padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fff;z-index:100}
+    .brand{font-size:.95rem;font-weight:800;color:#1a1a1a;letter-spacing:-.4px;text-decoration:none}
+    .brand em{color:#d97706;font-style:normal}
+    nav a{color:#555;font-size:.8rem;text-decoration:none;font-weight:500;margin-left:1.4rem}
+    nav a:hover{color:#d97706}
+    .wrap{max-width:740px;margin:0 auto;padding:2.5rem 1.5rem 5rem}
+    .post-cat{font-size:.72rem;color:#d97706;font-weight:700;text-transform:uppercase;letter-spacing:.14em;margin-bottom:.6rem}
+    h1{font-size:clamp(1.5rem,3.5vw,2.1rem);font-weight:800;line-height:1.18;margin-bottom:.9rem;color:#0a1628}
+    .byline{font-size:.78rem;color:#aaa;border-bottom:1px solid #eee;padding-bottom:1.1rem;margin-bottom:1.8rem}
+    h2{font-size:1.05rem;font-weight:700;color:#0a1628;margin:2.2rem 0 .6rem}
+    h3{font-size:.96rem;font-weight:700;color:#0a1628;margin:1.6rem 0 .4rem}
+    p{color:#3d3d3d;margin-bottom:1rem;font-size:.97rem}
+    ul,ol{color:#3d3d3d;font-size:.97rem;padding-left:1.5rem;margin-bottom:1rem}
+    li{margin-bottom:.45rem}
+    a{color:#d97706;font-weight:600;text-decoration:none}
+    a:hover{text-decoration:underline}
+    strong{color:#1a1a1a}
+    .cta{background:#fffbf0;border:1.5px solid #d97706;border-radius:8px;padding:1.4rem 1.6rem;margin:2.2rem 0}
+    .cta p{margin-bottom:.4rem;color:#78350f}
+    .cta a{color:#78350f;font-weight:700}
+    footer{border-top:1px solid #eee;padding:2rem 1.5rem;text-align:center;color:#bbb;font-size:.76rem;max-width:740px;margin:0 auto}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" class="brand">Meatlugs <em>Guide</em></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/index.html">Blog</a>
+    </nav>
+  </header>
+  <div class="wrap">
+    <p class="post-cat">Industry Guide</p>
+    <h1>How to Size a Meat Lug Fleet: Throughput, Buffer, and Replacement Math</h1>
+    <p class="byline">Meatlugs Editorial &bull; October 2026</p>
+    <p>Buy too few meat lugs and your line starves while crews wait on the wash loop; buy too many and you tie up capital and warehouse space in idle plastic. Right-sizing a reusable lug fleet is a logistics calculation, not a guess. This guide gives procurement and operations teams a repeatable framework for determining exactly how many lugs to own — and how many to reorder each year.</p><h2>Start With Peak Throughput, Not Average</h2><p>The anchor number is your peak-shift lug demand, not your annual average. Calculate how many lugs flow through your busiest zone during the busiest shift: product volume divided by fill weight per lug, rounded up. Averages hide the Friday surge or the pre-holiday run that actually determines whether you run short. Size to peak and the shoulder days take care of themselves.</p><h2>The Four Pools Every Fleet Needs</h2><p>A working fleet is never all on the line at once. Model it as four pools that must all be funded:</p><ul><li><strong>In-service:</strong> lugs actively holding product on the floor at peak</li><li><strong>Wash loop:</strong> lugs cycling through sanitation, staging, and drying</li><li><strong>In-transit float:</strong> lugs riding with shipments or sitting at a co-pack or DC awaiting return</li><li><strong>Safety buffer:</strong> spare capacity for surges, damage, and quarantine holds</li></ul><p>A common starting ratio is 1.0 in-service, 0.4 wash loop, 0.3 transit float, and 0.2 buffer — roughly 1.9x your peak in-service count. Closed-loop plants with on-site wash trend lower; operations that ship lugs off-site trend higher because the transit float balloons.</p><h2>Wash-Cycle Timing Drives the Loop Pool</h2><p>The size of your wash-loop pool is a direct function of cycle time. If a lug takes four hours to travel from empty return through wash, sanitize, dry, and re-stage, you need enough lugs in that pipeline to cover four hours of line demand. Faster wash throughput shrinks the pool and the total fleet. This is why nestable, smooth-walled designs pay off — they drain and dry faster and move through a tunnel washer cleanly. The <a href="https://elipacko.com/pp-meat-lugs/">PP meat lugs from Elipacko</a> nest tightly for return logistics and carry radiused interiors that cut drip-dry time.</p><h2>Replacement and Attrition Planning</h2><p>Even durable PP lugs leave the fleet — damage, loss at customer sites, and end-of-life retirement. Track your annual attrition rate and build a standing reorder into the budget rather than scrambling when counts drop. A well-run plant on quality lugs often sees single-digit annual attrition, but off-site shipping and rough dock handling push it higher. Audit your fleet count quarterly so replacement orders stay ahead of shortfalls, and consider standardizing on a single supplier so replacements drop straight into existing racking and dollies. Facilities running mixed container types can consolidate attrition tracking by sourcing lugs alongside the rest of their <a href="https://elipacko.com/pp-containers/">PP food processing containers</a> from one factory.</p><h2>Capital vs. Cost-Per-Trip</h2><p>Fleet sizing is where reusable economics prove out. Each lug is a one-time capital purchase amortized over hundreds or thousands of trips, versus the recurring spend of single-use packaging. Model the fully loaded cost per trip — purchase price divided by expected lifetime cycles, plus wash cost — and the right fleet size becomes a clear ROI decision rather than a budget argument. Larger fleets raise upfront capital but lower per-trip cost by reducing emergency top-up buys at premium prices.</p><h2>Sourcing to Protect Your Sizing Model</h2><p>Your math only holds if replacements match the originals and arrive on time. Buying factory-direct protects both. Elipacko ships direct from Thailand and Vietnam under 0% anti-dumping duty, offers custom sizes so your fleet matches your fill weights and racking exactly, molds in food-grade FDA-compliant resin, and is developing US manufacturing to further shorten lead times. Direct sourcing also means predictable reorder pricing, which keeps your replacement budget accurate year over year.</p><h2>Putting It Together</h2><p>Size to peak, fund all four pools, tune the wash loop to cycle time, and budget for attrition up front. Do that and your line never starves, your capital never sits idle, and your cost-per-trip stays low — the full payoff of a reusable meat lug program.</p>
+  </div>
+  <footer>
+    <p>&copy; 2026 Meatlugs — Industry guides and packaging information</p>
+  </footer>
+</body>
+</html>
